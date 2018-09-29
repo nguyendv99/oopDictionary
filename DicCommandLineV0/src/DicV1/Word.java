@@ -14,6 +14,7 @@ public class Word {
 	}
 
 	public void setWord_target(String word_target) {
+
 		this.word_target = word_target;
 	}
 
