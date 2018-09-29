@@ -1,22 +1,14 @@
-package DicV1;
-
-import java.util.ArrayList;
+package Assignment;
+import java.util.LinkedList;
 
 public class DictionaryCommandline {
-    public static void ShowAllWord( ArrayList<Word> WordArr) {
-        int sizeOfArr = WordArr.size();
-        System.out.println( "No       | English               | Vietnamese");
-        for( int i=0; i<sizeOfArr; i++) {
-            System.out.printf( "%-9s", i+1 );
-            System.out.print( "| " );
-            System.out.printf( "%-22s", WordArr.get(i).word_target );
-            System.out.println( "| " + WordArr.get(i).word_explain );
-        }
-    }
-
-    public static void main( String[] args) {
-        DictionaryManagment.insertFromCommandline();
-        ShowAllWord( Dictionary.WordArr);
-    }
-
+	public void showAllWords(LinkedList<Word> wordList) {
+		System.out.print("N0\t|English\t\t|Vietnamese");
+		int sizeList = wordList.size();
+		for (int i = 0; i < sizeList; i++) {
+			System.out.print(i+1 + "\t|");
+			System.out.print(wordList.get(i).getWord_target() + "\t\t|");
+			System.out.print(wordList.get(i).getWord_explain()+ "\n");
+		}
+	}
 }
