@@ -31,31 +31,25 @@ public class DictionaryManagment {
 
     //Hàm lấy word từ một file txt ( commandLine V1)
     public static void insertFromFile() {
-
-       File fileDic = new File( "./File/Dictionary2.txt" );
-
-       try( Scanner scn = new Scanner( fileDic)) {
-           while ( scn.hasNextLine()) {
-
-               Word word = new Word( "", ""); //Tao ra mot bien kieu Word
-
-               String oneLine = scn.nextLine(); //Lấy nội dung một dòng text lưu vào biến oneLine
-               oneLine = oneLine.toLowerCase();
-
-               int countTarget = 0;
-               String newOneLine = oneLine.replace( "\ufeff", "");
-
-               for( int i=0; i<newOneLine.length(); i++) { //vòng for để lưu biến word_target
-                   if( newOneLine.charAt( i ) == 9 ) {
-                       countTarget = i;
-                       word.word_target = newOneLine.substring( 0, countTarget);
-                       break;
-                   }
-               }
-
-               for( int i=countTarget; i<newOneLine.length(); i++) {
-                   if( newOneLine.charAt( i ) != 9) {
-                       word.word_explain = newOneLine.substring( i);
+        try {
+            FileInputStream fis = new FileInputStream("Dictionary.txt");
+            InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
+            BufferedReader br = new BufferedReader(isr);
+            String line = br.readLine();
+            while(line != null) {
+                String newOneLine = line.replace("\ufeff", "");
+                String []arr = newOneLine.split("\t");
+                Dictionary.WordArr.add(new Word(arr[0], arr[1]));
+                line = br.readLine();
+            }
+            br.close();
+            isr.close();
+            fis.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }bstring( i);
                        break;
                    }
                }
