@@ -1,0 +1,53 @@
+﻿above	ở trên
+all	tất cả
+allow	cho phép
+already	đã
+also	cũng
+although	mặc dù
+arm	cánh tay
+as	như là
+because	bởi vì
+before	phía trước
+below	phía dưới
+brother	anh trai
+but	nhưng
+can	có thể
+claim	yêu cầu
+consider	xem xét
+current	hiện hành
+dear	kính thưa
+do	làm
+enough	đủ
+even	cũng
+event	sự kiện
+for	cho
+from	từ
+get	được
+good	tốt
+hello	xin chào
+however	tuy nhiên
+in	trong
+it	nó
+keep	giữ
+know	biết
+leave	dời khỏi
+love	yêu
+mean	nghĩa
+my	của tôi
+nice	tốt đẹp
+no	không
+ok	đồng ý
+on	trên
+please	xin
+provide	cung cấp
+quiet	yên tĩnh
+quite	khá
+right	đúng
+thank you	cảm ơn
+under	dưới
+until	cho đến khi
+we	chúng tôi
+what	gì
+who	ai
+zero	số không
+zone	khu vực
